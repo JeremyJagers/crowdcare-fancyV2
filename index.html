@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CrowdCare</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="https://unpkg.com/scrollreveal"></script>
+  <script defer>
+    ScrollReveal().reveal('.fade-in', { distance: '50px', duration: 800, easing: 'ease-in-out', origin: 'bottom', interval: 200 });
+    let texts = ["Decentralized safety nets for everyone.", "Crypto-powered care for freelancers.", "Mutual aid that actually works."];
+    let index = 0;
+    setInterval(() => {
+      document.querySelector(".subtitle").textContent = texts[index];
+      index = (index + 1) % texts.length;
+    }, 3000);
+  </script>
+</head>
+<body>
+  <div class="background-gradient"></div>
+  <main class="container">
+    <section class="hero glass fade-in">
+      <h1 class="title">CrowdCare</h1>
+      <p class="subtitle">Decentralized safety nets for everyone.</p>
+      <a href="https://replit.com/@jeremyjagers/CrowdCareV3" class="cta-button" target="_blank">Launch Demo</a>
+    </section>
+
+    <section class="features card fade-in">
+      <h2>How It Works</h2>
+      <ul>
+        <li>🔗 Join a trusted pool</li>
+        <li>💸 Contribute monthly</li>
+        <li>🤝 Submit or support claims</li>
+        <li>🪙 Earn $CRWD for trust and referrals</li>
+      </ul>
+    </section>
+
+    <section class="form-section card fade-in">
+      <h2>Join the Early Access Waitlist</h2>
+      <form action="https://formspree.io/f/mwkgrzor" method="POST">
+        <input type="email" name="email" placeholder="Your email address" required>
+        <input type="text" name="referrer" placeholder="Referral code (optional)">
+        <button type="submit">Join Now</button>
+      </form>
+    </section>
+
+    <section class="crwd-info card fade-in">
+      <h2>What is $CRWD?</h2>
+      <p>
+        $CRWD is the currency of trust. Earn it by helping others, referring friends, or staying loyal.
+        Use it to boost claims, unlock new pools, and participate in platform decisions.
+      </p>
+    </section>
+
+    <footer>
+      Built by JaguarJerm_CrowdCare • <a href="https://github.com/JeremyJagers/CrowdCare" target="_blank">View on GitHub</a>
+    </footer>
+  </main>
+</body>
+</html>
